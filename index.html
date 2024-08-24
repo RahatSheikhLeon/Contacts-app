@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="phone-screen">
+
+        <ul class="list" id="list"></ul>
+        <div class="info" id="NumberSaveSystem">
+            <form action="#" id="myForm" onsubmit="save()">
+
+
+                <div class="image-wrapper">
+                    <div class="add-img">
+                        <div class="img-icon" id="imgIcon">
+                            <i class='fa-regular fa-image' id="icon"></i>
+                        </div>
+                        <label for="inputFile" id="addImges"></label>
+                        <input type="file" accept="image/jpeg, image/png, image/png" id="inputFile">
+
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <label>First Name</label>
+                    <input type="text" id="FirstName">
+                </div>
+                <div>
+                    <label>last Name</label>
+                    <input type="text" id="LastName">
+                </div>
+
+
+
+                <div>
+                    <label>Type</label>
+                    <select id="option">
+                        <option value="Phone">Phone</option>
+                        <option value="Sim">Sim</option>
+                        <option value="Email" id="optionEmail">Email</option>
+                    </select>
+                </div>
+
+                <div id="ItemEmail" class="email">
+                    <label> Email</label>
+                    <input type="email" class="email-input" id="EmailInput">
+                </div>
+
+                <div>
+                    <label>Number</label>
+                    <input type="number" id="PhoneNumber">
+                </div>
+
+                <button class="save-btn" id="saveBtn">Save</button>
+            </form>
+        </div>
+
+        <div class="addIcon">
+            <button onclick="addcont()">+</button>
+        </div>
+
+        <div class="info-wrapper" id="infoWrapper">
+            <div class="menu-icon">
+                <span id="back"><i class="fa-solid fa-arrow-left-long"></i></span>
+                <span id="Edit"> <i class="fa-solid fa-ellipsis-vertical"></i></span>
+                <div class="menu" id="menuOpen">
+                    <ul>
+                        <li>
+                            <a href="#"> Edit </a>
+                        </li>
+                        <li id="deleteNumber">
+                            <a href="#"> Delete </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="owner-img_box">
+                <span class="owner-img" id="ownerImg">
+                    <i class="fa-regular fa-user" id="iconInner"></i>
+                </span>
+            </div>
+            <div class="owner-name">
+                <h2 id="fullName"></h2>
+            </div>
+            <div class="call-msg">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-phone"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-video"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="owner-number_box">
+                <div class="phone-icon">
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <div class="owner-number_info">
+                    <div class="owner-number" id="ownerNumber">
+                        
+                    </div>
+                    <div class="owner-number_save-dtls" >
+                        <span id="categoryInput"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
